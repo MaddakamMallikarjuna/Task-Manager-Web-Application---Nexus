@@ -20,15 +20,9 @@ Follow these steps to run the project locally:
 
 ### 1. Clone the Repository 📂
 
-```bash
-$ git clone https://github.com/yourusername/task-manager.git
-```
 
 ### 2. Navigate to the Project Directory 📁
 
-```bash
-$ cd task-manager
-```
 
 ### 3. Open the Project in a Browser 🌐
 
@@ -43,11 +37,10 @@ $ open index.html
 ## Project Structure 🗂️
 
 ```
-task-manager/
+Task-Manager-Web-Application/
 ├── index.html                         # Main HTML file
 ├── style.css                          # Styling with CSS
 ├── script.js                          # JavaScript logic
-|── Task-Manager-Web-App-Video.mp4     # Video Showing Working
 ├── Webpage-fevicon.png                # JavaScript logic
 └── README.md        # Project documentation
 ```
