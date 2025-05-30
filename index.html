@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Task Manager - Simplify your daily task management with an interactive and customizable task organizer. Track, filter, and complete tasks efficiently using deadline management, theme customization, and an intuitive interface.">
+    <meta name="keywords" content="Task Manager, Daily Task Management, Task Tracking Tool, Personal Task Manager, Productivity Tools, To-Do List Manager, Task Scheduling App, Efficient Task Organizer, Deadline Management Tool, Task Tracker, Online Task Manager, Theme Customization, Interactive Task App, Task Filters, Manage Pending and Completed Tasks">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    <meta name="revisit-after" content="7 days">
+
+    <meta property="og:title" content="Task Manager - Organize and Track Your Tasks">
+    <meta property="og:description" content="An efficient Task Manager to organize your daily tasks. Add deadlines, filter tasks, and customize themes to boost your productivity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:image" content="https://www.example.com/images/task-manager-preview.jpg">
+    <meta property="og:locale" content="en_US">
+
+    <link rel="icon" href="Webpage-fevicon.png" type="image/x-icon">
+
+
+    <title>Task Manager - Simplify Your Daily Task Management</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="theme-selector">
+            <button id="themeToggle" class="theme-btn">
+                <span class="current-theme">🎨</span>
+                <div class="theme-options">
+                    <div class="color-picker">
+                        <div class="rainbow-picker" id="rainbowPicker"></div>
+                        <div class="color-preview">
+                            <div class="selected-colors">
+                                <div>
+                                    <label></label>
+                                    <input type="color" id="primaryColor" class="color-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </button>
+        </div>
+        <header>
+            <h1>Task Manager</h1>
+            <p>Manage your daily tasks efficiently</p>
+        </header>
+
+        <div class="task-form">
+            <input type="text" id="taskTitle" placeholder="Enter task title">
+            <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+            <input type="datetime-local" id="taskDeadline" placeholder="Set deadline (optional)" step="60">
+            <button id="addTask">Add Task</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="task-list" id="taskList">
+            <!-- Tasks will be added here after adding -->
+        </div>
+    </div>
+    <script>
+        // Add error handling for script loading
+        window.onerror = function(msg, url, lineNo, columnNo, error) {
+            console.error('Error: ' + msg + '\nURL: ' + url + '\nLine: ' + lineNo + '\nColumn: ' + columnNo + '\nError object: ' + JSON.stringify(error));
+            return false;
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
